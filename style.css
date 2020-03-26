@@ -5,10 +5,130 @@
 html, body{
     padding: 0pt;
     margin: 0pt;
+    background-color: #FEFEEF;
+    font-family: sans-serif;
 }
+
+.gridWrapper{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.item-2x{
+    grid-column: span 2;
+}
+
+.item-8x8{
+    grid-column: span 8;
+    grid-row: span 8;
+}
+
+.shiftR-2{
+    grid-column-start: 3;
+}
+
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colorAnimation{
+    animation: backgroundColorCycle 5s infinite;
+}
+
+.title{
+    font-size: 20vmin;
+    animation: textColorCycleInv 5s infinite;
+}
+
+.sectionBox{
+    opacity: 0;
+    border: 5px dashed black;
+    background-color: #F16666;
+    transition-duration: 0.7s;
+}
+
+.sectionBox:hover{
+    opacity: 1;
+    transition-duration: 0.7s;
+}
+
+.circle{
+    border: 3px solid black;
+    border-radius: 100%;
+    height:10vmin;
+    width: 10vmin;
+    transition-duration: 0.7s;
+}
+  
+.circle:hover{
+    border: 2px dashed black;
+    height:15vmin;
+    width: 15vmin;
+    transition-duration: 0.7s;
+}
+
+.square{
+    border: 2px solid black;
+    height:10vmin;
+    width: 10vmin;
+    opacity: 0;
+    transition-duration: 0.7s
+ }
+  
+.square:hover{
+    border: 2px solid black;
+    opacity: 1;
+    transition-duration: 0.7s
+}
+
+.hideCircle{
+    text-align: center;
+    border-radius: 100%;
+    height:10vmin;
+    width: 10vmin;
+    opacity: 0;
+    transition-duration: 0.7s
+  }
+  
+  .hideCircle:hover{
+    border: 3px solid black;
+    opacity: 1;
+    transition-duration: 0.7s
+  }
 
 
 /* Animation */
-@keyframes colorCycle{
-    
+@keyframes backgroundColorCycle{
+    0%{background-color:#f54242;}
+    10%{background-color:#f5c242;}
+    20%{background-color:#daf542;}
+    30%{background-color:#51f542;}
+    40%{background-color:#42f5c8;}
+    50%{background-color:#42c2f5;}
+    60%{background-color:#4254f5;}
+    70%{background-color:#9342f5;}
+    80%{background-color:#d442f5;}
+    90%{background-color:#f542b3;}
+    100%{background-color:#f54242;}
+
 }
+
+@keyframes textColorCycleInv{
+    0%{color:#42c2f5;}
+    10%{color:#4254f5;}
+    20%{color:#9342f5;}
+    30%{color:#d442f5;}
+    40%{color:#f542b3;}
+    50%{color:#f54242;}
+    60%{color:#f5c242;}
+    70%{color:#daf542;}
+    80%{color:#51f542;}
+    90%{color:#42f5c8;}
+    100%{color:#42c2f5;}
+
+
+}
+
