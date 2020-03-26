@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    padding: 0pt;
+    margin: 0pt;
+}
+
+
+/* Animation */
+@keyframes colorCycle{
+    
+}
