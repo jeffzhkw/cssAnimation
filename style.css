@@ -18,9 +18,9 @@ html, body{
     grid-column: span 2;
 }
 
-.item-8x8{
+.item-8x{
     grid-column: span 8;
-    grid-row: span 8;
+
 }
 
 .shiftR-2{
@@ -48,6 +48,8 @@ html, body{
     border: 5px dashed black;
     background-color: #F16666;
     transition-duration: 0.7s;
+    margin-top: 10vmin;
+    margin-top: 10vmin;
 }
 
 .sectionBox:hover{
